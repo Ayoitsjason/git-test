@@ -18,7 +18,11 @@
     "url": "https://github.com/Ayoitsjason/git-test/issues"
   },
   "homepage": "https://github.com/Ayoitsjason/git-test#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper": "^1.0.1"
+  },
   "devDependencies": {
     "lite-server": "^2.6.1"
   }
