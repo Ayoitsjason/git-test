@@ -221,7 +221,7 @@
                         <li data-target="#mycarousel" data-slide-to="2"></li>
                     </ol>
                     <!-- Carousel controls -->
-                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="previous">
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
@@ -340,32 +340,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        // Carousel cycle button
-        $(document).ready(function() {
-            $('#mycarousel').carousel({ interval: 1000 });
-            $('#carouselButton').click(function() {
-                if ($('#carouselButton').children("span").hasClass('fa-pause')) {
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children("span").removeClass('fa-pause');
-                    $('#carouselButton').children("span").addClass('fa-play');
-                }
-                else if ($('#carouselButton').children("span").hasClass('fa-play')) {
-                    $('#mycarousel').carousel("cycle");
-                    $('#carouselButton').children("span").removeClass('fa-play');
-                    $('#carouselButton').children("span").addClass('fa-pause');
-                }
-            });
-
-            // Reserve table button modal activation
-            $('#reserveModalButton').click(function() {
-                $('#reserveform').modal('toggle');
-            });
-            $('#loginModalButton').click(function() {
-                $('#loginModal').modal('toggle');
-            });
-        })
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
