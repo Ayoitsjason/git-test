@@ -29,6 +29,7 @@
     "jquery": "^3.6.0",
     "node": "^12.22.1",
     "popper": "^1.0.1",
+    "scss": "^0.2.4",
     "utf-8-validate": "^5.0.2"
   },
   "devDependencies": {
